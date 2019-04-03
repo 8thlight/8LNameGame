@@ -50,7 +50,7 @@ NameGame.prototype.addTextInput = function(employeeDiv, count) {
 
 NameGame.prototype.shuffle = function(){
   var count = 0;
-  $(".team_member").map(function(){
+  $(".team-member").map(function(){
     $(this).addClass("wholething" + count);
     count++;
   });
@@ -72,7 +72,7 @@ NameGame.prototype.addScoreboard = function() {
 NameGame.prototype.replaceNamesWithInputs = function() {
     count = 0;
     names = [];
-    $(".team_member > h3").map(function() {
+    $(".team-member > h3").map(function() {
       var employeeName = NameGame.prototype.getName($(this));
       names.push(employeeName);
       NameGame.prototype.removeName($(this));
